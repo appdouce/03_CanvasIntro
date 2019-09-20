@@ -49,7 +49,7 @@ function HandleNewObjectMovement() {
     NEW_OBJECT.x += dx;
     NEW_OBJECT.y += dy;
 
-    if (NEW_OBJECT.x > 600-25 || NEW_OBJECT.x < 0 - 25) {
+    if (NEW_OBJECT.x > 600-25 || NEW_OBJECT.x < 0 + 25) {
          dx *= -1;
     }
     if (NEW_OBJECT.y > 300 - 25 || NEW_OBJECT.y < 0 - 25) {
