@@ -19,16 +19,16 @@ var CONTROLS = {
 
 document.addEventListener('keydown', function(event) {
   switch (event.key) {
-    case "ArrowUp":
+    case "w":
       CONTROLS.ship.forward = true;
       break;
-    case "ArrowDown":
+    case "s":
       CONTROLS.ship.backward = true;
       break;
-    case "ArrowLeft":
+    case "a":
       CONTROLS.ship.rotateCounterClockwise = true;
       break;
-    case "ArrowRight":
+    case "d":
       CONTROLS.ship.rotateClockwise = true;
       break;
     case " ":
@@ -42,16 +42,16 @@ document.addEventListener('keydown', function(event) {
 
 document.addEventListener('keyup', function(event) {
   switch (event.key) {
-    case "ArrowUp":
+    case "w":
       CONTROLS.ship.forward = false;
       break;
-    case "ArrowDown":
+    case "s":
       CONTROLS.ship.backward = false;
       break;
-    case "ArrowLeft":
+    case "a":
       CONTROLS.ship.rotateCounterClockwise = false;
       break;
-    case "ArrowRight":
+    case "d":
       CONTROLS.ship.rotateClockwise = false;
       break;
     case " ":
